@@ -1,0 +1,377 @@
+/*
+Theme Name: testwork548
+Version: 1.0
+Author: @arkanzas75
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #1C1C1C;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    cursor: pointer;
+}
+
+button,
+input,
+input::placeholder,
+select,
+textarea,
+textarea::placeholder {
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    opacity: 1;
+}
+
+button,
+input,
+select,
+textarea {
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    color: #000;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    margin-bottom: 50px;
+    background: #9090ff61;
+    padding: 30px 0;
+}
+
+.head-menu {
+    margin-bottom: 50px;
+}
+
+.head-menu ul li a {
+    color: #686972;
+}
+
+.head-menu ul li a::before {
+    content: '-';
+    margin-right: 5px;
+    color: #910e86;
+    font-weight: 700;
+}
+
+.head-menu ul li a::after {
+    content: '-';
+    margin-left: 5px;
+    color: #910e86;
+    font-weight: 700;
+}
+
+section {
+    margin-bottom: 100px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo h1,
+.woocommerce-products-header__title {
+    font-size: 29px;
+    color: #910e86;
+}
+
+.section-title {
+    margin-bottom: 25px;
+    font-size: 24px !important;
+    color: #910e86;
+}
+
+.head-menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.front-products-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px 5%;
+}
+
+.front-products-list-item-content-title {
+    padding: 15px 0;
+}
+
+.front-products-list-item-content-title span,
+.woocommerce ul.products li.product .woocommerce-loop-product__title {
+    font-weight: 700;
+    padding: 0;
+}
+
+.front-products-list-item-content>span,
+.woocommerce ul.products li.product .price {
+    display: block;
+    color: #ff2222;
+    padding-bottom: 15px;
+}
+
+.woocommerce ul.products li.product .price {
+    padding-top: 15px;
+    margin: 0;
+}
+
+.buy-button,
+.woocommerce ul.products li.product .button {
+    text-align: center;
+    display: block;
+    background: #cb70cb38;
+    padding: 15px;
+    font-weight: 400;
+}
+
+.buy-button:hover,
+.new-product-submit input:hover,
+.woocommerce ul.products li.product .button:hover,
+.woocommerce div.product form.cart .button:hover {
+    font-weight: 700;
+    background: #c047c061;
+    cursor: pointer;
+}
+
+.front-products-list-item-pic img {
+    width: 100%;
+}
+
+footer {
+    background: #9090ff9c;
+    padding: 70px 0;
+}
+
+.footer-wrapper {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    gap: 0 20%;
+    align-items: center;
+    color: #787070;
+    font-weight: 700;
+}
+
+.footer-wrapper a {
+    text-align: right;
+    color: #787070;
+    font-weight: 700;
+}
+
+.footer-wrapper span {
+    font-size: 16px;
+}
+
+.new-product-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px 3%;
+    margin-bottom: 20px;
+}
+
+.new-product-form input,
+.new-product-form select {
+    padding: 15px;
+}
+
+.new-product-img {
+    text-align: center;
+}
+
+.new-product-submit {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.new-product-submit input {
+    background: #cb70cb38;
+    padding: 15px;
+    border: none;
+    padding: 15px 50px;
+}
+
+#ui-datepicker-div {
+    display: none;
+}
+
+.single .product.type-product {
+    display: flex;
+    justify-content: space-between;
+}
+
+.woocommerce div.product .product_title {
+    margin-bottom: 30px;
+}
+
+.woocommerce div.product p.price {
+    color: #ff2222;
+    padding-bottom: 30px;
+}
+
+.woocommerce div.product form.cart {
+    display: flex;
+    align-items: center;
+}
+
+.woocommerce div.product form.cart .button {
+    background: #cb70cb38;
+    padding: 15px;
+    border: none;
+    padding: 15px 50px;
+    color: #000;
+    font-weight: 400;
+    margin-left: 35px;
+}
+
+.woocommerce-message {
+    display: none;
+}
+
+
+@media (max-width: 1250px) {
+    .container {
+        max-width: 942px;
+    }
+
+    .logo h1 {
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 718px;
+    }
+
+    .woocommerce ul.products li.product,
+    .woocommerce-page ul.products li.product {
+        width: 46%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 526px;
+    }
+
+    .front-products-list,
+    .footer-wrapper,
+    .new-product-form {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-wrapper,
+    .footer-wrapper a {
+        text-align: center;
+    }
+
+    .footer-wrapper a {
+        margin-top: 40px;
+    }
+
+    .new-product-img {
+        text-align: left;
+    }
+
+    .single .product.type-product {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    .logo {
+        flex-direction: column;
+    }
+
+    .logo h1 {
+        font-size: 20px;
+        margin: 40px 0 0 0;
+        text-align: center;
+    }
+
+    .woocommerce-products-header__title {
+        font-size: 20px;
+    }
+
+    .logo a img {
+        width: 50%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .head-menu ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .head-menu ul li {
+        margin-bottom: 10px;
+    }
+
+    .woocommerce ul.products li.product,
+    .woocommerce-page ul.products li.product {
+        width: 100% !important;
+    }
+
+    .woocommerce .woocommerce-ordering,
+    .woocommerce-page .woocommerce-ordering,
+    .woocommerce .woocommerce-result-count,
+    .woocommerce-page .woocommerce-result-count {
+        float: none;
+    }
+
+    .new-product-img {
+        display: flex;
+    }
+
+    .section-title {
+        font-size: 20px !important;
+    }
+}
